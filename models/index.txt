@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeepMotionFX</title>
+</head>
+<body>
+  <h1>DeepMotionFX - Face Swap, Lip Sync, Motion Transfer</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <label>Select Task:</label><br>
+    <input type="radio" name="task" value="face_swap" > Face Swap<br>
+    <input type="radio" name="task" value="lip_sync"> Lip Sync<br>
+    <input type="radio" name="task" value="motion_transfer"> Motion Transfer<br><br>
+
+    <label>Source Image/Video:</label>
+    <input type="file" name="source" ><br><br>
+
+    <label>Target Image/Video:</label>
+    <input type="file" name="target" ><br><br>
+
+    <label>Audio (only for Lip Sync):</label>
+    <input type="file" name="audio"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Flask
+opencv-python
+numpy
+moviepy
+pip install librosa==0.9.2

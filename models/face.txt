@@ -1,0 +1,16 @@
+import cv2
+import numpy as np
+import os
+
+def swap_faces(source_path, target_path):
+    source = cv2.imread(source_path)
+    target = cv2.imread(target_path)
+
+    # Resize source to match target
+    source = cv2.resize(source, (target.shape[1], target.shape[0]))
+
+    blended = cv2.addWeighted(source, 0.5, target, 0.5, 0)
+
+    result_path = os.path.join('static/results', 'face_swap.jpg')
+    cv2.imwrite(result_path, blended)
+    return result_path

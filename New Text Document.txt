@@ -1,0 +1,14 @@
+git clone https://github.com/Rudrabha/Wav2Lip
+cd Wav2Lip && pip install -r requirements.txt
+# Download checkpoint into Wav2Lip/checkpoints/wav2lip_gan.pth
+
+git clone https://github.com/AliaksandrSiarohin/first-order-model
+cd first-order-model && pip install -r requirements.txt
+# Download checkpoint into first-order-model/checkpoints/vox-cpk.pth.tar
+
+cd DeepMotionFX
+pip install -r requirements.txt
+python app.py
+
+
+http://127.0.0.1:5000
